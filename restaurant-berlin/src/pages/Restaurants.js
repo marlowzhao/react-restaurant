@@ -1,9 +1,16 @@
-import React from "react";
+import React, {useContext} from "react";
+import { Context } from "../Context.js";
+import Image from "../components/Image"
 
 export default function Restaurants() {
-  return(
+
+  const{resArray}=useContext(Context)
+  const restaurants = resArray.map(res=>(<Image key={res.id} {...res}/>))
+
+
+  return (
     <main className="restaurants">
-      <h1>restaurnts are here</h1>
+      <h1>{restaurants}</h1>
     </main>
   )
 }

@@ -34,3 +34,22 @@ header {
 a {
   text-decoration: none;
 }
+
+/* restaurants page */
+
+.restaurants{
+  margin-left: 30px;
+
+}
+
+/* about image of restaurants */
+.image-container{
+    justify-content: space-around;
+
+}
+
+.image-res{
+  width: 40%;
+  height: 40vh;
+  object-fit: cover;
+}
