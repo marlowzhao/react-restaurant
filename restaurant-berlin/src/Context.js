@@ -5,14 +5,34 @@ const Context = React.createContext()
 
 function ContextProvider({children}){
   const[resArray, setResArray]=useState([])
+  const[cartItems, setCartItems]=useState([])
 
   useEffect(()=>{
     setResArray(resData)
   },[])
   // console.log(resArray)
 
+  function toggleFavorite(id){
+    const updateResArr = resArray.map(restaurant=>{
+      if(restaurant.id === id) {
+        return{ ...restaurant, isFavorite: !restaurant.isFavorite}
+      }
+      return restaurant
+    })
+    setResArray(updateResArr)
+  }
+
+  function addItemCart(newItem){
+    setCartItems(prevItems=>[...prevItems, newItem])
+  }
+
+  function removeItem(id){
+    setCartItems(prevItems => prevItems.filter(item => item.id !==id))
+  }
+
+  console.log(cartItems)
   return(
-    <Context.Provider value={{resArray: resArray}}>
+    <Context.Provider value={{resArray, toggleFavorite, addItemCart, cartItems, removeItem}}>
       {children}
     </Context.Provider>
   )

@@ -35,45 +35,78 @@ a {
   text-decoration: none;
 }
 
-/* restaurants page */
+/* header my shopping cart on header */
+.shopping-cart.empty{
+  color: white;
+}
+
+.shopping-cart.item{
+  color: blue;
+  transform: scaleX(1.2);
+  border: 1px dashed blue;
+}
+
+/* page restaurants */
 
 .restaurants{
-  margin: 30px;
+  left:0;
+  right:0;
+  margin: auto;
   height: 100vh;
   background-color: whitesmoke;
   display: flex;
+  justify-content: space-around;
 }
 
 /* about image of restaurants */
 .image-container{
-  justify-content: space-around;
-  background-color: gray;
   padding:10px;
+  width: 40%;
+  margin: 10px;
   position: relative;
+  display:inline-block;
+  border: 1px solid green;
+  overflow: hidden;
 }
 
 .image-res{
-  width: 300px;
-  height: 150px;
+  /* width: 450px;
+  height: 170px; */
+  width:100%;
+  height:25vh;
   object-fit: cover;
 }
 
 /* icon on image */
 
 .ri-heart-line.favorite,
-.ri-add-circle-line.cart{
+.ri-add-circle-line.cart,
+.ri-shopping-cart-fill.cart,
+.ri-heart-fill.favorite{
   font-size: 15px;
   color: white;
   top: 10%;
   position: absolute;
 }
 
+/* favorite icon */
 .ri-heart-line.favorite{
   color: blueviolet;
   left:10%;
 }
 
+.ri-heart-fill.favorite{
+  color: gold;
+  left:10%;
+}
+
+/* to cart icon */
 .ri-add-circle-line.cart{
   color: white;
   right:10%;
+}
+
+.ri-shopping-cart-fill.cart{
+  color: green;
+  right: 10%
 }
