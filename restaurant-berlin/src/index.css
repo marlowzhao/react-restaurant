@@ -38,18 +38,42 @@ a {
 /* restaurants page */
 
 .restaurants{
-  margin-left: 30px;
-
+  margin: 30px;
+  height: 100vh;
+  background-color: whitesmoke;
+  display: flex;
 }
 
 /* about image of restaurants */
 .image-container{
-    justify-content: space-around;
-
+  justify-content: space-around;
+  background-color: gray;
+  padding:10px;
+  position: relative;
 }
 
 .image-res{
-  width: 40%;
-  height: 40vh;
+  width: 300px;
+  height: 150px;
   object-fit: cover;
+}
+
+/* icon on image */
+
+.ri-heart-line.favorite,
+.ri-add-circle-line.cart{
+  font-size: 15px;
+  color: white;
+  top: 10%;
+  position: absolute;
+}
+
+.ri-heart-line.favorite{
+  color: blueviolet;
+  left:10%;
+}
+
+.ri-add-circle-line.cart{
+  color: white;
+  right:10%;
 }
