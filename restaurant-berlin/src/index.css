@@ -110,3 +110,41 @@ a {
   color: green;
   right: 10%
 }
+
+
+/* cart page */
+.cart-page{
+  justify-content: center;
+  display:flex;
+  flex-direction: column;
+}
+
+/* check out */
+.cart-page h1{
+ text-align: center;
+}
+/* place order button div */
+
+.cart-order-button{
+  width: 130px;
+  display: flex;
+  margin:0 auto;
+}
+
+.cart-page a{
+  border: 1px solid var(--black);
+  cursor:pointer;
+  padding: 15px;
+}
+
+.cart-page a:hover{
+  box-shadow: 4px 1px 1px var(--pink);
+}
+
+.item-in-cart{
+  display:flex;
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 20px;
+}
