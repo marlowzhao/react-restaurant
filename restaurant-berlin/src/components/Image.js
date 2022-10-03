@@ -7,16 +7,16 @@ export default function Image(props) {
   const {toggleFavorite, addItemCart, cartItems, removeItem} =useContext(Context)
 
   const heartHovered = hovered &&
-    <i className={props.isFavorite? "ri-heart-line favorite" : "ri-heart-fill favorite"}
-                  onClick={()=>toggleFavorite(props.id)}>heart</i>
+    <i className={props.isFavorite? "ri-heart-fill favorite" : "ri-heart-line favorite" }
+                  onClick={()=>toggleFavorite(props.id)}> like</i>
 
 
   function cartHovered(){
     const inCart = cartItems.some(item => props.id===item.id)
       if(inCart){
-        return <i className="ri-shopping-cart-fill cart" onClick={()=>removeItem(props.id)}>buy coupon</i>
+        return <i className="ri-shopping-cart-fill cart" onClick={()=>removeItem(props.id)}> in cart</i>
       } else if(hovered){
-        return <i className="ri-add-circle-line cart" onClick={()=> addItemCart(props)}>buy coupon</i>
+        return <i className="ri-add-circle-line cart" onClick={()=> addItemCart(props)}> add to cart</i>
       }
   }
 

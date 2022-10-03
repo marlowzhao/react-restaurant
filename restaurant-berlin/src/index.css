@@ -31,7 +31,7 @@ a {
 }
 
 /* header my shopping cart on header */
-.shopping-cart.empty{
+/* .shopping-cart.empty{
   color: white;
 }
 
@@ -39,7 +39,7 @@ a {
   color: blue;
   transform: scaleX(1.2);
   border: 1px dashed blue;
-}
+} */
 
 /* page restaurants */
 
@@ -86,25 +86,21 @@ a {
 
 /* favorite icon */
 .ri-heart-line.favorite{
-  color: blueviolet;
+  /* color: blueviolet; */
   left:10%;
 }
 
 .ri-heart-fill.favorite{
-  color: gold;
+  /* color: gold; */
   left:10%;
 }
 
 /* to cart icon */
-.ri-add-circle-line.cart{
-  color: white;
+.ri-add-circle-line.cart,
+.ri-shopping-cart-fill.cart{
   right:10%;
 }
 
-.ri-shopping-cart-fill.cart{
-  color: green;
-  right: 10%
-}
 
 @media only screen and (max-width: 600px){
   .image-container{
@@ -157,10 +153,12 @@ a {
 }
 
 .cart-page a:hover{
-  box-shadow: 4px 1px 1px var(--pink);
+  color: var(--pink);
+  box-shadow: #EA453C;
 }
 
 .item-in-cart{
+  font-family: "Roboto";
   display:flex;
   width: 70%;
   justify-content: space-between;

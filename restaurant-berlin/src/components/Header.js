@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <header>
       <Link to="/"><h2 >Choose your Restaurant Coupon</h2></Link>
-      <Link to="/cart"><i className={empty? "shopping-cart empty" : "shopping-cart item"}>my shopping cart</i></Link>
+      <Link to="/cart"><i className={empty? "ri-shopping-cart-line ri-fw ri-2x" : "ri-shopping-cart-fill ri-fw ri-2x" }></i></Link>
 
     </header>
   )
