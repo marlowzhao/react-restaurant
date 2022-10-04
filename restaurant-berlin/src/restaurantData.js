@@ -20,13 +20,13 @@ export const resData =[
   id: 5,
   isFavorite: false},
 
-// { image:"zhou'sfive.png",
-//   id: 6,
-//   isFavorite: false},
+{ image:"zhou'sfive.png",
+  id: 6,
+  isFavorite: false},
 
-// { image:"dajiale.png",
-//   id: 7,
-//   isFavorite: false},
+{ image:"dajiale.png",
+  id: 7,
+  isFavorite: false},
 
 // { image:"greenflavor.png",
 //   id: 8,

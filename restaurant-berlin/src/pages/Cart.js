@@ -23,7 +23,7 @@ export default function Cart() {
             setTimeout(() => {
               setClicked(false)
               clearCart()
-            }, 3000);
+            }, 1500);
           }
         }>
           <a>{clicked? "Ordering..." : "Place Order"}</a>

@@ -9,8 +9,11 @@ export default function Restaurants() {
 
 
   return (
-    <main className="restaurants">
+    <main>
+      <h2 className="restaurants-title">Chinese Restaurants in Berlin</h2>
+      <div className="restaurants">
       {restaurants}
+      </div>
     </main>
   )
 }
