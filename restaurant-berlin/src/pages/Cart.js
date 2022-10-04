@@ -14,7 +14,7 @@ export default function Cart() {
       <div className="cart-items-info">
       {inCartItems}
       {  cartItems.length===0?
-        <p>Your cart is now empty.</p> :
+        <p>You have no vouchers.</p> :
         <div className="cart-order-button" onClick={()=>
           { setClicked(true)
             setTimeout(() => {

@@ -1,16 +1,15 @@
 :root {
  --black: #150605;
- --pink: #D70F64;
+ --pink: #FF2A84;
  --blue: #551A8B;
- --white:#F7F4F4;
+ --white:#FAFAFA;
+ --bgpink:#F6C6CB;
  --header:#FFFFFF;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background: var(--white);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -66,7 +65,15 @@ a {
 /* page restaurants */
 .restaurants-title{
   text-align: center;
-  margin: 30px 0;
+  margin: 35px 0;
+  font-weight: bold;
+  color: var(--pink);
+}
+
+.restaurants-subtitle{
+  text-align: center;
+  font-weight: 500;
+  color: var(--black);
 }
 
 .restaurants{
@@ -80,14 +87,15 @@ a {
 
 /* about image of restaurants */
 .image-container{
-  width: 45%;
+  width: 40%;
   min-width: 380px;
   height: 220px;
   margin: 10px;
+  background-color: var(--bgpink);
   display:flex;
   flex-direction: column;
   border-radius: 15px;
-  box-shadow: 1px 1px 2px 1px grey;
+  box-shadow: 1px 1px 2px 1px var(--bgpink);
   position: relative;
 
 }
@@ -98,8 +106,9 @@ a {
 
 .image-res{
   width:100%;
-  height:80%;
+  height:90%;
   margin-top: 25px;
+  border-radius:0 0 15px 15px;
   object-fit: cover;
   overflow: hidden;
 }
@@ -107,27 +116,25 @@ a {
 
 .image-res-name{
   top:2%;
-  left:20%;
+  left:30%;
   position: absolute;
   margin-top:0;
   font-weight: 700;
-  color: var(--black);
+  color: var(--pink);
 }
 .image-res-name:hover{
   text-decoration: underline;
 }
 
 .image-res-info{
-  height: 70px;
+  height: 45px;
   width: 100%;
-  /* align-items: center; */
   position:absolute;
   display: flex;
-  color:white;
+  color:var(--header);
   bottom: 0%;
-  /* line-height: 0.1; */
-  border-radius: 15px;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+  border-radius: 0 0 15px 15px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
 }
 
 .image-res-info-gap{
@@ -187,6 +194,7 @@ a {
 
 
 /* CART PAGE */
+
 .cart-page{
   justify-content: center;
   display:flex;
@@ -223,6 +231,7 @@ a {
 
 .cart-page h1{
  text-align: center;
+ margin-top: 100px;
 }
 
 .item-in-cart{
@@ -260,5 +269,5 @@ a {
 .cart-order-button:hover{
   box-shadow: 1px 1px 4px 1px var(--pink);
   transition: 1s;
-  background-color: var(--black);
+  background-color: var(--blue);
 }

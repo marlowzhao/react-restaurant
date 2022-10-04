@@ -11,6 +11,7 @@ export default function Restaurants() {
   return (
     <main>
       <h2 className="restaurants-title">Chinese Restaurants in Berlin</h2>
+      <h4 className="restaurants-subtitle">Limited Offer: add free vouchers to your cart! Check out the affordable Chinese cuisine in Berlin!</h4>
       <div className="restaurants">
       {restaurants}
       </div>
