@@ -14,6 +14,7 @@ export default function Cart() {
   return (
     <main className="cart-page">
       <h1>Check Out</h1>
+      <div className="cart-items-info">
       {inCartItems}
       {  cartItems.length===0?
         <p>Your cart is now empty.</p> :
@@ -24,9 +25,10 @@ export default function Cart() {
               clearCart()
             }, 3000);
           }
-      }>
-         <a>{clicked? "Ordering..." : "Place Order"}</a>
-      </div>}
+        }>
+          <a>{clicked? "Ordering..." : "Place Order"}</a>
+        </div>}
+      </div>
     </main>
   )
 }

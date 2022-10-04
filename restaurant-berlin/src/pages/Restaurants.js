@@ -10,7 +10,7 @@ export default function Restaurants() {
 
   return (
     <main className="restaurants">
-      <h1>{restaurants}</h1>
+      {restaurants}
     </main>
   )
 }

@@ -9,9 +9,10 @@ export default function Header() {
 
   return (
     <header>
+      <div className="header-items">
       <Link to="/"><h2 >Choose your Restaurant Coupon</h2></Link>
       <Link to="/cart"><i className={empty? "ri-shopping-cart-line ri-fw ri-2x" : "ri-shopping-cart-fill ri-fw ri-2x" }></i></Link>
-
+      </div>
     </header>
   )
 }

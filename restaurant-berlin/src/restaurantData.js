@@ -16,8 +16,36 @@ export const resData =[
   id: 4,
   isFavorite: false},
 
-{ image:"goldentea.png",
+{ image:"newocean.png",
   id: 5,
   isFavorite: false},
+
+// { image:"zhou'sfive.png",
+//   id: 6,
+//   isFavorite: false},
+
+// { image:"dajiale.png",
+//   id: 7,
+//   isFavorite: false},
+
+// { image:"greenflavor.png",
+//   id: 8,
+//   isFavorite: false},
+
+// { image:"deli.png",
+//   id: 9,
+//   isFavorite: false},
+
+// { image:"laoxiang.png",
+//   id: 10,
+//   isFavorite: false},
+
+// { image:"tianfu.png",
+//   id: 11,
+//   isFavorite: false},
+
+// { image:"grandtang.png",
+//   id: 12,
+//   isFavorite: false},
 
 ]
