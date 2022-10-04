@@ -1,8 +1,9 @@
 :root {
  --black: #150605;
- --pink: #EA453C;
+ --pink: #D70F64;
  --blue: #551A8B;
  --white:#F7F4F4;
+ --header:#FFFFFF;
 }
 
 body {
@@ -23,7 +24,6 @@ header {
   justify-content: center;
   background-color: var(--pink);
   height:90px;
-  color: white;
   padding: 0 15px;
   box-shadow: 1px 5px 10px -5px rgba(21,6,5,1)
 }
@@ -35,12 +35,17 @@ header {
   align-items: center;
 }
 
-.header-items-left{
+.header-items-title {
+  color: var(--white)
+}
+
+.header-items-right{
   display: flex;
   align-items: center;
-  color: var(--blue);
+  color: var(--header);
   gap: 15px;
 }
+
 
 a {
   text-decoration: none;
@@ -88,7 +93,7 @@ a {
 }
 
 .image-container:hover{
-  border: 1px solid var(--blue);
+  border: 1px solid var(--pink);
 }
 
 .image-res{
@@ -106,6 +111,7 @@ a {
   position: absolute;
   margin-top:0;
   font-weight: 700;
+  color: var(--black);
 }
 .image-res-name:hover{
   text-decoration: underline;
@@ -168,7 +174,7 @@ a {
 .ri-heart-line.favorite,
 .ri-heart-fill.favorite{
   left:5%;
-  color:var(--black);
+  color:var(--pink);
 }
 
 
@@ -176,7 +182,7 @@ a {
 .ri-add-circle-line.cart,
 .ri-shopping-cart-fill.cart{
   right:5%;
-  color:var(--black);
+  color:var(--pink);
 }
 
 
@@ -240,7 +246,7 @@ a {
   width: 130px;
   display: flex;
   margin:0 auto;
-  background-color: var(--blue);
+  background-color: var(--pink);
   color: whitesmoke;
   border-radius: 15px;
   justify-content: center;
