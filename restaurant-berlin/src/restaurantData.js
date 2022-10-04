@@ -1,32 +1,34 @@
 
 export const resData =[
 { image:"fulong.png",
+  name:"China Restaurant-Fu Long",
   id: 1,
   isFavorite: false},
 
 { image:"goldentea.png",
+  name:"Golden Tea Garden",
   id: 2,
   isFavorite: false},
 
-{ image:"ninhao.png",
-  id: 3,
-  isFavorite: false},
+// { image:"ninhao.png",
+//   id: 3,
+//   isFavorite: false},
 
-{ image:"sichuan.png",
-  id: 4,
-  isFavorite: false},
+// { image:"sichuan.png",
+//   id: 4,
+//   isFavorite: false},
 
-{ image:"newocean.png",
-  id: 5,
-  isFavorite: false},
+// { image:"newocean.png",
+//   id: 5,
+//   isFavorite: false},
 
-{ image:"zhou'sfive.png",
-  id: 6,
-  isFavorite: false},
+// { image:"zhou'sfive.png",
+//   id: 6,
+//   isFavorite: false},
 
-{ image:"dajiale.png",
-  id: 7,
-  isFavorite: false},
+// { image:"dajiale.png",
+//   id: 7,
+//   isFavorite: false},
 
 // { image:"greenflavor.png",
 //   id: 8,

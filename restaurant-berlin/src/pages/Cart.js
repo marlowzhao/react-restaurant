@@ -7,9 +7,6 @@ export default function Cart() {
   const[clicked, setClicked] = useState(false)
 
   const inCartItems = cartItems.map(item=> <ItemInCart key={item.id} {...item}/>)
-  // function ifItemThere() {
-  //   return cartItems.length===0? <p>Your cart is now empty.</p> :
-  // }
 
   return (
     <main className="cart-page">

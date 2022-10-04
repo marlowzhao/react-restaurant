@@ -8,15 +8,19 @@ export default function ItemInCart(props){
 
   return (
     <div className="item-in-cart">
-      <img src={`./respics/${props.image}`} width="150px" height="70px" />
-      <p>price</p>
-      <i className={ifHovered}
-         onClick={()=>removeItem(props.id)}
-         onMouseEnter={()=>setHovered(true)}
-         onMouseLeave={()=>setHovered(false)}
-      >
-        {/* remove item */}
-      </i>
+      <img src={`./respics/${props.image}`} />
+      <p>{props.name}</p>
+
+      <div>
+        <p>price</p>
+        <i className={ifHovered}
+          onClick={()=>removeItem(props.id)}
+          onMouseEnter={()=>setHovered(true)}
+          onMouseLeave={()=>setHovered(false)}
+        >
+          {/* remove item */}
+        </i>
+      </div>
     </div>
   )
 }

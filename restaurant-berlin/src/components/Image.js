@@ -22,6 +22,7 @@ export default function Image(props) {
 
   return (
      <div className="image-container" onMouseEnter={()=>setHovered(true)} onMouseLeave={()=>setHovered(false)}>
+      <p className="image-res-name">{props.name}</p>
       <img src={`./respics/${props.image}`} className="image-res" alt="restaurant"/>
       {heartHovered}
       {cartHovered()}
