@@ -9,10 +9,13 @@ export default function ItemInCart(props){
   return (
     <div className="item-in-cart">
       <img src={`./respics/${props.image}`} />
-      <p>{props.name}</p>
 
       <div>
-        <p>price</p>
+        <p>{props.name}</p>
+        <p>{props.location}</p>
+      </div>
+
+      <div>
         <i className={ifHovered}
           onClick={()=>removeItem(props.id)}
           onMouseEnter={()=>setHovered(true)}
