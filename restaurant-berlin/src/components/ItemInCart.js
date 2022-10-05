@@ -1,5 +1,6 @@
 import React,{useContext, useState} from "react";
-import{Context} from "../Context"
+import{Context} from "../Context";
+import {MdShareLocation} from 'react-icons/md';
 
 export default function ItemInCart(props){
   const{removeItem}=useContext(Context)
@@ -10,19 +11,15 @@ export default function ItemInCart(props){
     <div className="item-in-cart">
       <img src={`./respics/${props.image}`} />
 
-      <div>
-        <p>{props.name}</p>
-        <p>{props.location}</p>
-      </div>
-
-      <div>
-        <i className={ifHovered}
-          onClick={()=>removeItem(props.id)}
-          onMouseEnter={()=>setHovered(true)}
-          onMouseLeave={()=>setHovered(false)}
-        >
-          {/* remove item */}
-        </i>
+      <div className="item-in-cart-right">
+          <p>{props.name}</p>
+          <p><MdShareLocation /> {props.location}</p>
+          <i className={ifHovered}
+            onClick={()=>removeItem(props.id)}
+            onMouseEnter={()=>setHovered(true)}
+            onMouseLeave={()=>setHovered(false)}
+          >
+          </i>
       </div>
     </div>
   )

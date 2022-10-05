@@ -1,5 +1,6 @@
 import React, {useState, useContext} from "react";
 import {Context} from "../Context";
+import {MdShareLocation} from 'react-icons/md';
 
 
 export default function Image(props) {
@@ -15,7 +16,7 @@ export default function Image(props) {
                 <div className="image-res-info">
                 <div className="image-res-info-gap"></div>
                   <div className="image-res-info-words">
-                    <p> {props.location}</p>
+                    <p><MdShareLocation/> {props.location}</p>
                   </div>
                 </div>
   }

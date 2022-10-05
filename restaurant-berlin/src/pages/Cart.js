@@ -1,12 +1,16 @@
 import React,{useState, useContext} from "react";
 import {Context} from "../Context";
 import ItemInCart from "../components/ItemInCart";
+import QuitingPage from "../components/QuitingPage";
 
 export default function Cart() {
   const{cartItems, clearCart}=useContext(Context)
   const[clicked, setClicked] = useState(false)
 
   const inCartItems = cartItems.map(item=> <ItemInCart key={item.id} {...item}/>)
+  function inserQuittingPage() {
+    return clicked && <QuitingPage />
+  }
 
   return (
     <main className="cart-page">
@@ -19,12 +23,17 @@ export default function Cart() {
           { setClicked(true)
             setTimeout(() => {
               setClicked(false)
-              clearCart()
             }, 1500);
+            setTimeout(() => {
+              inserQuittingPage()
+              clearCart()
+            }, 2000);
           }
         }>
-          <a>{clicked? "Ordering..." : "Place Order"}</a>
+          <a>{clicked? "Odering..." : "Get vouchers"}</a>
         </div>}
+        {/* add loading page */}
+        {inserQuittingPage()}
       </div>
     </main>
   )
