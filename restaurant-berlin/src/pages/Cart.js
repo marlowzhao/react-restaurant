@@ -8,7 +8,7 @@ export default function Cart() {
   const[clicked, setClicked] = useState(false)
 
   const inCartItems = cartItems.map(item=> <ItemInCart key={item.id} {...item}/>)
-  function inserQuittingPage() {
+  function renderQuittingPage(){
     return clicked && <QuitingPage />
   }
 
@@ -25,7 +25,6 @@ export default function Cart() {
               setClicked(false)
             }, 1500);
             setTimeout(() => {
-              inserQuittingPage()
               clearCart()
             }, 2000);
           }
@@ -33,7 +32,7 @@ export default function Cart() {
           <a>{clicked? "Odering..." : "Get vouchers"}</a>
         </div>}
         {/* add loading page */}
-        {inserQuittingPage()}
+        {renderQuittingPage()}
       </div>
     </main>
   )
