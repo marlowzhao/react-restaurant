@@ -9,11 +9,11 @@ export default function Header() {
   return (
     <header>
       <div className="header-items">
-      <Link to="/"><h2 className="header-items-title">HOME</h2></Link>
+      <Link to="/"><h2 className="header-items-title">Home</h2></Link>
 
       <div className="header-items-right">
-      <div className="header-items-caption">{empty? "Add vouchers" : "View vouchers"} </div>
-      <Link to="/cart"><i className={empty? "ri-shopping-cart-line ri-fw ri-2x" : "ri-shopping-cart-fill ri-fw ri-2x" }></i></Link>
+      <Link to="/cart"><div className="header-items-caption">{empty? "Add vouchers" : "View vouchers"} </div></Link>
+      <i className={empty? "ri-shopping-cart-line ri-fw ri-2x" : "ri-shopping-cart-fill ri-fw ri-2x" }></i>
       </div>
       </div>
     </header>
