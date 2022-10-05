@@ -15,10 +15,11 @@ export default function Restaurants() {
         <h3 className="restaurants-subtitle">
           LIMITED OFFER: add free vouchers to your cart!
         </h3>
-        <h4 className="restaurants-subtitle">
+        <h4 className="restaurants-subtitle-down">
            This website is a foodie's guide to Chinese cuisine in Berlin. Check out
-           affordable Chinese restaurants in Berlin!
+            <strong> affordable Chinese restaurants</strong> in Berlin!
         </h4>
+
       </div>
       <div className="restaurants">
       {restaurants}

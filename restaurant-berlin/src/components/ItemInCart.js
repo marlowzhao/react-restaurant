@@ -15,9 +15,9 @@ export default function ItemInCart(props){
           <p>{props.name}</p>
           <p><MdShareLocation /> {props.location}</p>
           <i className={ifHovered}
-            onClick={()=>removeItem(props.id)}
-            onMouseEnter={()=>setHovered(true)}
-            onMouseLeave={()=>setHovered(false)}
+             onClick={()=>removeItem(props.id)}
+             onMouseEnter={()=>setHovered(true)}
+             onMouseLeave={()=>setHovered(false)}
           >
           </i>
       </div>

@@ -50,10 +50,6 @@ export default function Image(props) {
       />
       {heartHovered}
       {cartHovered()}
-      {/* <div className="image-res-info">
-        <p>{props.website}</p>
-        <p>{props.location}</p>
-      </div> */}
       {infoShow()}
      </div>
   )
