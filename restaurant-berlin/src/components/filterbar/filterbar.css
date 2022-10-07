@@ -1,0 +1,31 @@
+/* button group and buttons */
+.btn-group{
+  margin: auto;
+  width: 60%;
+  align-items:center;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.res-select-btn,
+.res-clicked-btn{
+  border: 1px solid var(--pink);
+  font-weight: 600;
+  margin-left: 12px;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+.res-select-btn{
+  background-color: var(--white);
+}
+
+.res-clicked-btn{
+  background-color: var(--bgpink);
+  color: var(--pink);
+}
+
+.res-select-btn:hover{
+  color: var(--pink);
+  transform: scale(1.1);
+}

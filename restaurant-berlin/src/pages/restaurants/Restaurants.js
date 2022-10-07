@@ -1,7 +1,8 @@
+import "./restaurants.css";
 import React, {useContext} from "react";
-import { Context } from "../Context.js";
-import FilterBar from "../components/FilterBar.js";
-import Image from "../components/Image"
+import { Context } from "../../Context";
+import FilterBar from "../../components/filterbar/FilterBar";
+import Image from "../../components/image.js/Image"
 
 export default function Restaurants() {
 

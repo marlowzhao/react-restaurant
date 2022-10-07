@@ -1,7 +1,8 @@
+import "./cart.css";
 import React,{useState, useContext} from "react";
-import {Context} from "../Context";
-import ItemInCart from "../components/ItemInCart";
-import QuitingPage from "../components/QuitingPage";
+import {Context} from "../../Context";
+import ItemInCart from "../../components/itemincart/ItemInCart";
+import QuitingPage from "../../components/quitingpage/QuitingPage";
 
 export default function Cart() {
   const{cartItems, clearCart}=useContext(Context)

@@ -1,3 +1,4 @@
+import "./quitingpage.css";
 import React from "react";
 
 export default function QuitingPage(){

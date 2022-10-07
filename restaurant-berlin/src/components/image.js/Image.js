@@ -1,5 +1,6 @@
+import "./image.css";
 import React, {useState, useContext} from "react";
-import {Context} from "../Context";
+import {Context} from "../../Context";
 import {MdShareLocation} from 'react-icons/md';
 
 

@@ -1,6 +1,7 @@
-import React, {useContext, useState} from "react";
-import {Context} from "../Context.js";
-import {resData} from "../restaurantData.js";
+import "./filterbar.css"
+import React, {useContext} from "react";
+import {Context} from "../../Context";
+import {resData} from "../../restaurantData";
 
 export default function FilterBar(){
   const{filterBy, setResArray}=useContext(Context)

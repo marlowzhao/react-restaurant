@@ -1,5 +1,6 @@
+import "./itemincart.css";
 import React,{useContext, useState} from "react";
-import{Context} from "../Context";
+import{Context} from "../../Context";
 import {MdShareLocation} from 'react-icons/md';
 
 export default function ItemInCart(props){

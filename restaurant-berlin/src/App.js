@@ -1,8 +1,8 @@
 import React from "react";
 import {Routes, Route} from "react-router-dom";
-import Header from "./components/Header";
-import Cart from "./pages/Cart"
-import Restaurants from "./pages/Restaurants"
+import Header from "./components/header/Header";
+import Cart from "./pages/cart/Cart"
+import Restaurants from "./pages/restaurants/Restaurants"
 
 function App() {
   return (
