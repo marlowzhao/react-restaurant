@@ -1,6 +1,6 @@
 import React, {useContext} from "react";
 import { Context } from "../Context.js";
-import Searchbar from "../components/Searchbar.js";
+import FilterBar from "../components/FilterBar.js";
 import Image from "../components/Image"
 
 export default function Restaurants() {
@@ -21,7 +21,7 @@ export default function Restaurants() {
 
          <strong>LIMITED OFFER</strong>
       </div>
-      <Searchbar />
+      <FilterBar />
       <div className="restaurants">
       {restaurants}
       </div>

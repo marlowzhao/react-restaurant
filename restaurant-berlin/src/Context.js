@@ -34,26 +34,9 @@ function ContextProvider({children}){
     setCartItems([])
   }
 
-  // function filter if id>7
-  // return fliteredArray
-  function filterBySichuan(){
+  function filterBy(value){
     const filteredResArray=resArray.filter(restaurant => {
-      return restaurant.keywords.includes("Sichuan")
-    })
-    setResArray(filteredResArray)
-  }
-
- 
-  function filterBySpicy(){
-    const filteredResArray=resArray.filter(restaurant => {
-      return restaurant.keywords.includes("spicy")
-    })
-    setResArray(filteredResArray)
-  }
-
-  function filterByNE(){
-    const filteredResArray=resArray.filter(restaurant => {
-      return restaurant.keywords.includes("northeastern")
+      return restaurant.keywords.includes(value)
     })
     setResArray(filteredResArray)
   }
@@ -61,15 +44,13 @@ function ContextProvider({children}){
   return(
     <Context.Provider value={{
         resArray,
+        setResArray,
         toggleFavorite,
         cartItems,
         addItemCart,
         removeItem,
         clearCart,
-        // add new filter functions
-        filterBySichuan,
-        filterBySpicy,
-        filterByNE
+        filterBy
       }}>
         {children}
     </Context.Provider>

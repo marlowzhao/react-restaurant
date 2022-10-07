@@ -6,7 +6,7 @@ export const resData =[
   isFavorite: false,
   website: "https://fulongberlin.wordpress.com/",
   location: "Britzer Damm 18, 12347 Berlin",
-  keywords:["Cantonese"]
+  keywords:[]
 },
 
 { image: "goldentea.png",
