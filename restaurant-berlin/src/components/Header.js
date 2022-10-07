@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <header>
       <div className="header-items">
-      <Link to="/"><h2 className="header-items-title">Home</h2></Link>
+      <Link to="/"><h2 className="header-items-title">foodie's guide</h2></Link>
 
       <div className="header-items-right">
       <Link to="/cart"><div className="header-items-caption">{empty? "Add vouchers" : "View vouchers"} </div></Link>

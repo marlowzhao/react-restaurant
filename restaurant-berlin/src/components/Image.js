@@ -44,7 +44,7 @@ export default function Image(props) {
             setHovered(false)
             setShowInfo(false)
             }}>
-      <a className="image-res-name" href={props.website} target="_blank">{props.name}</a>
+      <a className="image-res-name" href={props.website} target="_blank" rel="noopener noreferrer">{props.name}</a>
       <img src={`./respics/${props.image}`}
            className="image-res" alt="restaurant"
       />

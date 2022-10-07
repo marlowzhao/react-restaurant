@@ -9,7 +9,7 @@ export default function ItemInCart(props){
 
   return (
     <div className="item-in-cart">
-      <img src={`./respics/${props.image}`} />
+      <img src={`./respics/${props.image}`} alt="restaurant"/>
 
       <div className="item-in-cart-right">
           <p>{props.name}</p>

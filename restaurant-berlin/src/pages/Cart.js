@@ -20,7 +20,7 @@ export default function Cart() {
       {inCartItems}
       {cartItems.length===0?
         <p>You have no vouchers.</p> :
-        <div className="cart-order-button" onClick={()=>
+        <button className="cart-order-button" onClick={()=>
           { setClicked(true)
             setTimeout(() => {
               setClicked(false)
@@ -30,8 +30,8 @@ export default function Cart() {
             }, 2500);
           }
         }>
-          <a>{clicked? "Odering..." : "Get vouchers"}</a>
-        </div>}
+          <p>{clicked? "Odering..." : "Get vouchers"}</p>
+        </button>}
         {renderQuittingPage()}
       </div>
     </main>

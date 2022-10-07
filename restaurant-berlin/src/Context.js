@@ -34,15 +34,42 @@ function ContextProvider({children}){
     setCartItems([])
   }
 
+  // function filter if id>7
+  // return fliteredArray
+  function filterBySichuan(){
+    const filteredResArray=resArray.filter(restaurant => {
+      return restaurant.keywords.includes("Sichuan")
+    })
+    setResArray(filteredResArray)
+  }
+
+ 
+  function filterBySpicy(){
+    const filteredResArray=resArray.filter(restaurant => {
+      return restaurant.keywords.includes("spicy")
+    })
+    setResArray(filteredResArray)
+  }
+
+  function filterByNE(){
+    const filteredResArray=resArray.filter(restaurant => {
+      return restaurant.keywords.includes("northeastern")
+    })
+    setResArray(filteredResArray)
+  }
 
   return(
     <Context.Provider value={{
         resArray,
         toggleFavorite,
-        addItemCart,
         cartItems,
+        addItemCart,
         removeItem,
-        clearCart
+        clearCart,
+        // add new filter functions
+        filterBySichuan,
+        filterBySpicy,
+        filterByNE
       }}>
         {children}
     </Context.Provider>

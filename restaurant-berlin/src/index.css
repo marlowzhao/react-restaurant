@@ -76,7 +76,7 @@ header {
   width:60%;
   margin: auto;
   margin-top:130px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   border-bottom: 1px solid var(--pink);
  }
 
@@ -110,6 +110,31 @@ header {
   margin-bottom: 100px;
 }
 
+/* button group and buttons */
+.btn-group{
+  margin: auto;
+  width: 60%;
+  align-items:center;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.res-select-btn{
+  border: 1px solid var(--pink);
+  background-color: var(--white);
+  font-weight: 600;
+  margin-left: 12px;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+.res-select-btn:hover{
+  background-color: var(--bgpink);
+  color: var(--pink);
+  transform: scale(1.1);
+}
+
+
 /* about image of restaurants */
 .image-container{
   width: 40%;
@@ -122,7 +147,6 @@ header {
   border-radius: 5px;
   box-shadow: 1px 1px 2px 1px var(--bgpink);
   position: relative;
-
 }
 
 .image-container:hover{
@@ -138,13 +162,13 @@ header {
   overflow: hidden;
 }
 
-
 .image-res-name{
   top:2%;
   left:25%;
   position: absolute;
   margin-top:0;
   font-weight: 700;
+  text-decoration: none;
   color: var(--pink);
 }
 .image-res-name:hover{
@@ -185,6 +209,9 @@ header {
     margin-bottom: 16px;
   }
 
+  .btn-group{
+    width: 75%;
+  }
  .restaurants{
     width:100%;
     flex-direction: column;
@@ -296,6 +323,7 @@ header {
 .cart-order-button{
   width: 150px;
   display: flex;
+  border-style: none;
   margin:0 auto;
   margin-top: 70px;
   margin-bottom: 50px;
@@ -305,15 +333,12 @@ header {
   justify-content: center;
 }
 
-.cart-page a{
-  cursor:pointer;
-  padding: 15px;
-}
 
 .cart-order-button:hover{
   box-shadow: 1px 1px 4px 1px var(--pink);
   transition: 1s;
   background-color: var(--blue);
+  transform:scale(1.1);
 }
 
 /* CART SHOPPING PAGE loading */
@@ -334,12 +359,16 @@ header {
  box-shadow: 0px 0px 6px 2px gray;
 }
 
-.cart-page-loading > h3{
+.cart-page-loading > h3,
+.cart-page-loading > h4{
   position:absolute;
   top: 40%;
   left: 20%;
   line-height: 1.5;
   color: var(--pink);
+}
+.cart-page-loading > h4{
+  top: 55%;
 }
 
 /* .cart-page-loading > button{
