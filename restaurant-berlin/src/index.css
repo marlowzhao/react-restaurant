@@ -20,40 +20,7 @@ body {
 /* about image of restaurants */
 
 
-@media only screen and (max-width: 800px){
-  .restaurants-right{
-    width:75%;
-    margin-bottom: 32px;
-   }
 
-  .restaurants-subtitle,
-  .restaurants-subtitle-down{
-    display: none;
-  }
-
-  .restaurants-subtitle-pink{
-    margin-bottom: 16px;
-  }
-
-  .btn-group{
-    width: 75%;
-  }
- .restaurants{
-    width:100%;
-    flex-direction: column;
-    flex-wrap:nowrap;
-    margin-bottom: 50px;
-  }
-  .image-container{
-    height: 200px;
-    width: 70%;
-    margin-bottom: 20px;
-    overflow: hidden;
-  }
-  .image-res{
-    width:100%;
-  }
-}
 
 /* icon on image */
 

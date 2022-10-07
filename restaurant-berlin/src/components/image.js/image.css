@@ -1,7 +1,7 @@
 .image-container{
-  width: 40%;
-  min-width: 380px;
-  height: 220px;
+  width: 30%;
+  /* min-width: 380px; */
+  height: 200px;
   margin: 10px;
   background-color: var(--bgpink);
   display:flex;
@@ -17,8 +17,8 @@
 
 .image-res{
   width:100%;
-  height:90%;
-  margin-top: 25px;
+  height:60%;
+  margin-top: 40px;
   border-radius:0 0 5px 5px;
   object-fit: cover;
   overflow: hidden;
@@ -29,7 +29,7 @@
   left:25%;
   position: absolute;
   margin-top:0;
-  font-weight: 700;
+  font-weight: 500;
   text-decoration: none;
   color: var(--pink);
 }
@@ -38,20 +38,33 @@
 }
 
 .image-res-info{
-  height: 45px;
+  height: 55px;
   width: 100%;
   position:absolute;
   display: flex;
-  color:var(--header);
+  color:var(--white);
   bottom: 0%;
   border-radius: 0 0 5px 5px;
-  background: linear-gradient(to bottom, rgba(138, 104, 104, 0.5), transparent);
+  /* background: linear-gradient(to bottom, rgba(138, 104, 104, 0.3), transparent); */
 }
 
 .image-res-info-gap{
-  width: 15%;
+  width: 12%;
 }
 .image-res-info-words{
   display: flex;
   flex-direction: column;
+}
+
+@media only screen and (max-width: 800px){
+/* for btn groups */
+ 
+
+  .image-container{
+    width: 42%;
+    flex-wrap: nowrap;
+    margin-bottom: 2px;
+    overflow: hidden;
+  }
+
 }

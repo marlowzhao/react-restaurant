@@ -18,7 +18,7 @@ export default function FilterBar(){
 
   return(
     <div className="btn-group">
-      <h4 style={{color:"var(--pink)"}}>Select by Key Words:</h4>
+      <h4 style={{color:"var(--pink)"}}>Select by Key Words: </h4>
       <button className="res-select-btn" onClick={()=>setResArray(resData)}>ALL</button>
       <button className="res-select-btn" onClick={()=>{
         filterBy("Sichuan")

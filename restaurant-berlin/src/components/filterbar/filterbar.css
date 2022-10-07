@@ -11,7 +11,7 @@
 .res-clicked-btn{
   border: 1px solid var(--pink);
   font-weight: 600;
-  margin-left: 12px;
+  margin-right: 12px;
   padding: 8px 16px;
   border-radius: 5px;
 }
@@ -28,4 +28,13 @@
 .res-select-btn:hover{
   color: var(--pink);
   transform: scale(1.1);
+}
+
+@media only screen and (max-width: 800px){
+  .btn-group{
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
 }

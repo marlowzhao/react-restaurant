@@ -1,7 +1,7 @@
-import "./quitingpage.css";
+import "./lastloadingpage.css";
 import React from "react";
 
-export default function QuitingPage(){
+export default function LastLoadingPage(){
   return(
     <div className="cart-page-loading">
       <h3>Your vouchers are being sent! </h3>

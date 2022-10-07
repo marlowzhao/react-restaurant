@@ -2,7 +2,7 @@ import "./cart.css";
 import React,{useState, useContext} from "react";
 import {Context} from "../../Context";
 import ItemInCart from "../../components/itemincart/ItemInCart";
-import QuitingPage from "../../components/quitingpage/QuitingPage";
+import LastLoadingPage from "../../components/lastloadingpage/LastLoadingPage";
 
 export default function Cart() {
   const{cartItems, clearCart}=useContext(Context)
@@ -11,7 +11,7 @@ export default function Cart() {
   const inCartItems = cartItems.map(item=> <ItemInCart key={item.id} {...item}/>)
 
   function renderQuittingPage(){
-   return clicked && <QuitingPage />
+   return clicked && <LastLoadingPage />
   }
 
   return (
