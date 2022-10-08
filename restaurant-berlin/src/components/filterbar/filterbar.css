@@ -7,6 +7,11 @@
   margin-bottom: 10px;
 }
 
+.btn-group-title{
+  color: var(--pink);
+  margin-right: 10px;
+}
+
 .res-select-btn,
 .res-clicked-btn{
   border: 1px solid var(--pink);
@@ -33,9 +38,10 @@
 
 @media only screen and (max-width: 800px){
   .btn-group{
-    width: 80%;
+    width: 75%;
+    min-width: 440px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content:flex-start;
   }
 
 }

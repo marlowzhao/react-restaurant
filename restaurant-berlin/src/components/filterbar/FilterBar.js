@@ -30,7 +30,7 @@ export default function FilterBar(){
 
   return(
     <div className="btn-group">
-      <h4 style={{color:"var(--pink)", marginRight: "10px"}}>Select by Key Words:</h4>
+      <h4 className="btn-group-title">Select by Key Words:</h4>
       <button className="res-select-btn"
               onClick={()=>{
                 setResArray(resData)
