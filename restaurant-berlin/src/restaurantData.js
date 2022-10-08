@@ -33,7 +33,7 @@ export const resData =[
   isFavorite: false,
   website: "https://sichuan-restaurant.de/",
   location: "Albrechtstraße 92, 12167 Berlin",
-  keywords:["spicy", "Sichuan"]
+  keywords:["spicy", "Sichuan", "dim sum"]
 },
 
 { image:"newocean.png",
@@ -50,7 +50,7 @@ export const resData =[
   isFavorite: false,
   website: "https://zhousfive.de/home/",
   location: "Marktstraße 6, 10317 Berlin",
-  keywords:[]},
+  keywords:["buffet"]},
 
 { image:"dajiale.png",
   name: "Da Jia Le",
@@ -58,7 +58,7 @@ export const resData =[
   isFavorite: false,
   website:"http://dajiale-berlin.de/",
   location:"Goebenstraße, 23 10783 Berlin",
-  keywords:[]},
+  keywords:["northeastern"]},
 
 { image:"greenflavor.png",
   id: 8,
@@ -66,7 +66,7 @@ export const resData =[
   isFavorite: false,
   website:"https://www.green-flavor-berlin.de/",
   location:"Kantstraße 22, 10623 Berlin",
-  keywords:[]},
+  keywords:["dim sum"]},
 
 { image:"deli.png",
   name:"Deli-House",

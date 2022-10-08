@@ -27,6 +27,7 @@
 
 .res-select-btn:hover{
   color: var(--pink);
+  cursor: pointer;
   transform: scale(1.1);
 }
 
